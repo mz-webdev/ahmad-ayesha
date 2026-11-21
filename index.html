@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#7A1F2B" />
+    <title>Ayesha &amp; Hamza | Wedding Invitation</title>
+    <meta
+      name="description"
+      content="A wedding invitation celebrating Ayesha and Hamza in Lahore."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Ayesha &amp; Hamza | Wedding Invitation"
+    />
+    <meta
+      property="og:description"
+      content="Together with their families, in Lahore."
+    />
+    <meta property="og:image" content="assets/images/hero.svg" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ayesha &amp; Hamza | Wedding Invitation"
+    />
+    <meta
+      name="twitter:description"
+      content="Together with their families, in Lahore."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%237A1F2B'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-size='36' fill='%23E6D3A3'%3Eأ%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to invitation</a>
+    <div
+      class="preloader"
+      id="preloader"
+      role="status"
+      aria-label="Loading invitation"
+    >
+      <div class="preloader-ornament"><span></span></div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <div
+      class="splash"
+      id="splash"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="splashTitle"
+    >
+      <div class="splash-card">
+        <div class="arched-door left-door" aria-hidden="true">
+          <span class="door-pattern"></span>
+        </div>
+        <div class="arched-door right-door" aria-hidden="true">
+          <span class="door-pattern"></span>
+        </div>
+        <div class="splash-copy">
+          <p class="eyebrow" id="splashEyebrow">You are invited</p>
+          <h1 id="splashTitle" class="script">Ayesha <i>&amp;</i> Hamza</h1>
+          <p id="personalGreeting"></p>
+          <button class="open-button" id="openInvitation" type="button">
+            <span>Tap to open</span>
+          </button>
+        </div>
+        <div class="tassel" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+
+    <div class="desktop-backdrop" aria-hidden="true">
+      <div class="backdrop-name" id="backdropName"></div>
+    </div>
+
+    <main id="main" class="invitation-frame">
+      <section class="hero" id="hero" aria-labelledby="heroTitle">
+        <canvas id="petals" aria-hidden="true"></canvas>
+        <div class="hero-arch">
+          <img
+            id="heroImage"
+            src="assets/images/hero.svg"
+            alt="Ayesha and Hamza"
+            width="900"
+            height="1400"
+          />
+          <div class="hero-shade"></div>
+          <p class="bismillah" id="bismillah">
+            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+          </p>
+          <div class="hero-content">
+            <p class="eyebrow" data-i18n="withFamilies">
+              Together with their families
+            </p>
+            <h1 id="heroTitle" class="hero-couple">
+              <span id="brideName">Ayesha</span><i>&amp;</i
+              ><span id="groomName">Hamza</span>
+            </h1>
+            <p class="hero-date" id="heroDate"></p>
+            <p class="hero-city" id="heroCity"></p>
+            <button
+              class="scroll-pill"
+              type="button"
+              data-scroll="#verse"
+              aria-label="Scroll to the invitation"
+            >
+              <span data-i18n="scroll">Scroll</span
+              ><span class="arrow" aria-hidden="true">↓</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section verse-section"
+        id="verse"
+        aria-labelledby="verseTitle"
+      >
+        <div class="container reveal">
+          <p class="eyebrow" data-i18n="verseEyebrow">With blessings</p>
+          <h2 class="sr-only" id="verseTitle">Quranic verse</h2>
+          <blockquote>
+            <p class="quran-arabic" id="verseArabic"></p>
+            <p class="quran-translation" id="verseEnglish"></p>
+            <p class="quran-urdu" id="verseUrdu"></p>
+            <cite id="verseReference"></cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section
+        class="section families-section"
+        id="families"
+        aria-labelledby="familiesTitle"
+      >
+        <div class="container">
+          <header class="section-heading reveal">
+            <p class="eyebrow" data-i18n="familiesEyebrow">
+              Two families, one dua
+            </p>
+            <h2 id="familiesTitle" data-i18n="familiesTitle">The Families</h2>
+          </header>
+          <div class="family-grid" id="familyCards"></div>
+        </div>
+      </section>
+
+      <section
+        class="section countdown-section"
+        id="countdown"
+        aria-labelledby="countdownTitle"
+      >
+        <div class="container reveal">
+          <p class="eyebrow" data-i18n="countdownEyebrow">Until we say</p>
+          <h2 id="countdownTitle" data-i18n="countdownTitle">Qubool</h2>
+          <div class="countdown" id="countdownGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section
+        class="section story-section"
+        id="story"
+        aria-labelledby="storyTitle"
+      >
+        <div class="container">
+          <header class="section-heading reveal">
+            <p class="eyebrow" data-i18n="storyEyebrow">
+              Every love has a beginning
+            </p>
+            <h2 id="storyTitle" data-i18n="storyTitle">Our Story</h2>
+          </header>
+          <div class="story-timeline" id="storyTimeline"></div>
+        </div>
+      </section>
+
+      <section
+        class="section events-section"
+        id="events"
+        aria-labelledby="eventsTitle"
+      >
+        <div class="container">
+          <header class="section-heading reveal">
+            <p class="eyebrow" data-i18n="eventsEyebrow">Celebrate with us</p>
+            <h2 id="eventsTitle" data-i18n="eventsTitle">The Celebrations</h2>
+          </header>
+          <div class="event-grid" id="eventCards"></div>
+        </div>
+      </section>
+
+      <section
+        class="section programme-section"
+        id="programme"
+        aria-labelledby="programmeTitle"
+      >
+        <div class="container">
+          <header class="section-heading reveal">
+            <p class="eyebrow" data-i18n="programmeEyebrow">
+              The evening unfolds
+            </p>
+            <h2 id="programmeTitle" data-i18n="programmeTitle">
+              The Programme
+            </h2>
+          </header>
+          <div
+            class="tabs"
+            id="programmeTabs"
+            role="tablist"
+            aria-label="Event programme"
+          ></div>
+          <div class="programme-list" id="programmeList"></div>
+        </div>
+      </section>
+
+      <section
+        class="section gallery-section"
+        id="gallery"
+        aria-labelledby="galleryTitle"
+      >
+        <div class="container">
+          <header class="section-heading reveal">
+            <p class="eyebrow" data-i18n="galleryEyebrow">
+              A few cherished frames
+            </p>
+            <h2 id="galleryTitle" data-i18n="galleryTitle">
+              Moments &amp; Places
+            </h2>
+          </header>
+        </div>
+        <div class="gallery" id="galleryGrid"></div>
+      </section>
+
+      <section
+        class="section venues-section"
+        id="venues"
+        aria-labelledby="venuesTitle"
+      >
+        <div class="container">
+          <header class="section-heading reveal">
+            <p class="eyebrow" data-i18n="venuesEyebrow">Find your way</p>
+            <h2 id="venuesTitle" data-i18n="venuesTitle">The Venues</h2>
+          </header>
+          <div
+            class="tabs venue-tabs"
+            id="venueTabs"
+            role="tablist"
+            aria-label="Event venues"
+          ></div>
+          <div class="venue-card" id="venueCard"></div>
+        </div>
+      </section>
+
+      <section
+        class="section guest-section"
+        id="guests"
+        aria-labelledby="guestsTitle"
+      >
+        <div class="container">
+          <header class="section-heading reveal">
+            <p class="eyebrow" data-i18n="guestsEyebrow">
+              A few helpful details
+            </p>
+            <h2 id="guestsTitle" data-i18n="guestsTitle">For Our Guests</h2>
+          </header>
+          <div class="guest-grid" id="guestCards"></div>
+        </div>
+      </section>
+
+      <section
+        class="section rsvp-section"
+        id="rsvp"
+        aria-labelledby="rsvpTitle"
+      >
+        <div class="container reveal">
+          <p class="eyebrow" data-i18n="rsvpEyebrow">Kindly respond</p>
+          <h2 id="rsvpTitle" data-i18n="rsvpTitle">Aap aa rahe hain na?</h2>
+          <p class="rsvp-subtitle" data-i18n="rsvpSubtitle">
+            We would be honoured to celebrate with you.
+          </p>
+          <div class="rsvp-actions">
+            <button class="rsvp-button rsvp-yes" id="rsvpYes" type="button">
+              <span aria-hidden="true">♡</span
+              ><span data-i18n="rsvpYes">Hum zaroor aayenge</span>
+            </button>
+            <button class="rsvp-button rsvp-no" id="rsvpNo" type="button">
+              <span data-i18n="rsvpNo">Maafi, nahi aa sakenge</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container reveal">
+          <p class="footer-urdu" id="footerUrdu"></p>
+          <p class="footer-dua" data-i18n="footerDua">With love and duas</p>
+          <p class="footer-families" id="footerFamilies"></p>
+          <p class="footer-names" id="footerNames"></p>
+          <p class="credit" id="credit"></p>
+        </div>
+      </footer>
+    </main>
+
+    <div class="floating-actions" aria-label="Invitation controls">
+      <button
+        class="float-button"
+        id="languageToggle"
+        type="button"
+        aria-label="Switch language"
+      >
+        EN
+      </button>
+      <button
+        class="float-button music-button"
+        id="musicToggle"
+        type="button"
+        aria-label="Play music"
+        aria-pressed="false"
+      >
+        <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+
+    <div class="modal-backdrop" id="rsvpModal" role="presentation" hidden>
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button
+          class="modal-close"
+          id="modalClose"
+          type="button"
+          aria-label="Close RSVP form"
+        >
+          ×
+        </button>
+        <p class="eyebrow" data-i18n="rsvpModalEyebrow">Your response</p>
+        <h2 id="modalTitle">Send RSVP</h2>
+        <form id="rsvpForm">
+          <label for="guestName"
+            >Guest name
+            <input
+              id="guestName"
+              name="guestName"
+              type="text"
+              autocomplete="name"
+            />
+          </label>
+          <label for="guestCount"
+            >Number of guests
+            <input
+              id="guestCount"
+              name="guestCount"
+              type="number"
+              min="1"
+              max="20"
+              value="1"
+              required
+            />
+          </label>
+          <button class="open-button modal-submit" type="submit">
+            Continue to WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+      hidden
+    >
+      <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Close image viewer"
+      >
+        ×
+      </button>
+      <button
+        class="lightbox-nav lightbox-prev"
+        type="button"
+        aria-label="Previous image"
+      >
+        ‹
+      </button>
+      <img id="lightboxImage" alt="" />
+      <button
+        class="lightbox-nav lightbox-next"
+        type="button"
+        aria-label="Next image"
+      >
+        ›
+      </button>
+    </div>
+
+    <audio id="backgroundMusic" loop preload="none"></audio>
+    <audio id="tapSound" preload="auto"></audio>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

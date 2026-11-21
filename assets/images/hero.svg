@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1400">
+  <defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#d7ba84"/><stop offset=".55" stop-color="#9c6f68"/><stop offset="1" stop-color="#55202a"/></linearGradient></defs>
+  <rect width="900" height="1400" fill="url(#b)"/><circle cx="450" cy="430" r="290" fill="#f3eadb" opacity=".18"/><path d="M0 1000C250 850 620 900 900 760V1400H0Z" fill="#2a211c" opacity=".55"/><text x="450" y="610" text-anchor="middle" fill="#fbf7f0" font-size="54" font-family="Georgia">Ayesha &amp; Hamza</text>
+</svg>
